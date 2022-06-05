@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
-from biceps import Workout
+# from biceps import Workout
+import cv2
 import werkzeug
 
 app = Flask(__name__)
@@ -9,17 +10,12 @@ app = Flask(__name__)
 @app.route('/index')
 @app.route('/homepage')
 def calculate():
-    # workout = Workout()
-    # result = workout.workout_detection(number=1, video=video)
-    # print(result)
-    # return 'ok'
-
     # Post request
     # if request.method == 'POST':
     #     videofile = request.files['workoutVideo']  # Important key
     #     videoname = werkzeug.utils.secure_filename(videofile.filename)
     #     videofile.save(videoname)
-    #     workout = biceps.Workout()
+    #     workout = Workout()
     #     result = workout.workout_detection(number=1, video=videoname)
     #     print(result)
     #     return jsonify({

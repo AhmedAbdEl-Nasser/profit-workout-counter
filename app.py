@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
-from cv2 import cv2
-# from biceps import Workout
-# import werkzeug
+from biceps import Workout
+import werkzeug
 
 app = Flask(__name__)
 

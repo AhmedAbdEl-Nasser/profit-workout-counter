@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 # from biceps import Workout
-# import cv2
+import cv2
 # import mediapipe as mp
 # import numpy as np
 # import werkzeug
